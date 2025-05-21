@@ -124,7 +124,6 @@ Fast-forward
 ```bash
 # Paste here the push & clone commands and outputs
 ```
-## Task 2: Bare Repository on an SSH Server
 
 ### SSH into the Server and Create Bare Repository
 
