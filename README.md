@@ -80,8 +80,10 @@ git checkout master
 
 # Step 9: Merge feature-1 into master
 git merge feature-1
+```
+### Terminal-Output:
 
-
+```bash
 Cloning into 'PP5'...
 remote: Enumerating objects: 10, done.
 ...
@@ -99,7 +101,7 @@ Fast-forward
  hello.txt | 1 +
  1 file changed, 1 insertion(+)
  create mode 100644 hello.txt
-
+```
 ---
 
 ### Task 2: Bare Repository on an SSH Server
