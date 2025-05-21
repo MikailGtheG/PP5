@@ -46,7 +46,6 @@ In this exercise you will:
 # Paste here the sequence of git commands you ran
 # and the relevant terminal output (e.g., branch listing, merge messages)
 ```
-## Task 1: Local Git – Branching & Merging
 
 ### Steps I followed
 
