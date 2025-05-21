@@ -46,6 +46,59 @@ In this exercise you will:
 # Paste here the sequence of git commands you ran
 # and the relevant terminal output (e.g., branch listing, merge messages)
 ```
+## Task 1: Local Git – Branching & Merging
+
+### Steps I followed
+
+```bash
+# Step 1: Clone the repository from GitHub
+git clone https://github.com/MikailGtheG/PP5
+
+# Step 2: Create a new directory and initialize it as a Git repo (not strictly needed, just to show init)
+mkdir PP5_1
+cd PP5_1
+git init
+cd ..
+
+# Step 3: Go into the cloned project
+cd PP5
+
+# Step 4: Create a new branch called feature-1
+git checkout -b feature-1
+
+# Step 5: Create a new file with some content
+echo "Dies ist der feature-1 Branch, in dem ich neue Features teste." > hello.txt
+
+# Step 6: Add the file to staging area
+git add hello.txt
+
+# Step 7: Commit the changes
+git commit -m "Add hello.txt with feature-1 description"
+
+# Step 8: Go back to master branch
+git checkout master
+
+# Step 9: Merge feature-1 into master
+git merge feature-1
+
+
+Cloning into 'PP5'...
+remote: Enumerating objects: 10, done.
+...
+Branch 'feature-1' set up to track remote branch 'feature-1' from 'origin'.
+
+[feature-1 cf257f6] Add hello.txt with feature-1 description
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt
+
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Updating bd8e694..cf257f6
+Fast-forward
+ hello.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt
 
 ---
 
