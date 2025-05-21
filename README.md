@@ -124,6 +124,86 @@ Fast-forward
 ```bash
 # Paste here the push & clone commands and outputs
 ```
+## Task 2: Bare Repository on an SSH Server
+
+### SSH into the Server and Create Bare Repository
+
+```bash
+ssh user58@128.140.85.215
+```
+
+Enter your password when prompted.
+
+```bash
+mkdir -p ~/repos/myproject.git && cd ~/repos/myproject.git && git init --bare
+```
+
+Output:
+```
+Initialized empty Git repository in /home/user58/repos/myproject.git/
+```
+
+Then exit the server:
+```bash
+exit
+```
+
+---
+
+### Add Remote Repository on Local Machine
+
+```bash
+git remote remove origin-ssh
+git remote add origin-ssh user58@128.140.85.215:~/repos/myproject.git
+git remote -v
+```
+
+Output:
+```
+origin       https://github.com/MikailGtheG/PP5 (fetch)
+origin       https://github.com/MikailGtheG/PP5 (push)
+origin-ssh   user58@128.140.85.215:~/repos/myproject.git (fetch)
+origin-ssh   user58@128.140.85.215:~/repos/myproject.git (push)
+```
+
+---
+
+### Push Local Repository to Remote
+
+```bash
+git push origin-ssh master
+```
+
+Output:
+```
+Counting objects: 13, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (13/13), 5.32 KiB | 5.32 MiB/s, done.
+Total 13 (delta 2), reused 9 (delta 1), pack-reused 0
+To 128.140.85.215:~/repos/myproject.git
+ * [new branch]      master -> master
+```
+
+---
+
+### Clone the Repository into a Fresh Directory
+
+```bash
+cd ~/Schreibtisch
+git clone user58@128.140.85.215:~/repos/myproject.git
+```
+
+Output:
+```
+Cloning into 'myproject'...
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 13 (delta 2), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (13/13), 5.32 KiB | 5.32 MiB/s, done.
+Resolving deltas: 100% (2/2), done.
+```
 
 ---
 
