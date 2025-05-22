@@ -224,6 +224,45 @@ Resolving deltas: 100% (2/2), done.
 ```bash
 # Paste here the remote‐adding & push outputs
 ```
+```bash
+$ cd PP5
+$ git init
+Reinitialized existing Git repository in /home/mikailerarslan/PP5/.git/
+
+$ git remote add github git@github.com:MikailGtheG/myproject-gh.git
+$ git remote add gitlab git@gitlab.thga.de:mikail.erarslan/myproject-gl.git
+
+$ git remote -v
+github	git@github.com:MikailGtheG/myproject-gh.git (fetch)
+github	git@github.com:MikailGtheG/myproject-gh.git (push)
+gitlab	git@gitlab.thga.de:mikail.erarslan/myproject-gl.git (fetch)
+gitlab	git@gitlab.thga.de:mikail.erarslan/myproject-gl.git (push)
+origin	https://github.com/MikailGtheG/PP5 (fetch)
+origin	https://github.com/MikailGtheG/PP5 (push)
+origin-ssh	user58@128.140.85.215:~/repos/myproject.git (fetch)
+origin-ssh	user58@128.140.85.215:~/repos/myproject.git (push)
+
+$ git push github master
+Counting objects: 13, done.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (13/13), 5.32 KiB | 5.32 MiB/s, done.
+Total 13 (delta 2), reused 9 (delta 1), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To github.com:MikailGtheG/myproject-gh.git
+ * [new branch]      master -> master
+
+$ git push gitlab master
+Counting objects: 13, done.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (13/13), 5.32 KiB | 5.32 MiB/s, done.
+Total 13 (delta 2), reused 9 (delta 1), pack-reused 0
+remote: 
+remote: To create a merge request for master, visit:
+remote:   https://gitlab.thga.de/mikail.erarslan/myproject-gl/-/merge_requests/new?merge_request%5Bsource_branch%5D=master
+remote: 
+To gitlab.thga.de:mikail.erarslan/myproject-gl.git
+ * [new branch]      master -> master
+```
 
 ---
 
