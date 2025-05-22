@@ -275,9 +275,13 @@ To gitlab.thga.de:mikail.erarslan/myproject-gl.git
 
 **Your PR/MR Links & Descriptions**
 
-* GitHub PR: *paste URL and a one-sentence summary*
-* GitLab MR: *paste URL and a one-sentence summary*
+- **GitHub PR**: [https://github.com/STEMgraph/a153b035-9e3f-400a-adf8-9934a8887593/pull/1](https://github.com/STEMgraph/a153b035-9e3f-400a-adf8-9934a8887593/pull/1)  
+  → Added a small change to the README file to test the pull request workflow.
 
+- **GitLab MR**: [https://gitlab.thga.de/aw4null/kompressionsmodellierung/unterdrueckte-zuendung-zu-zylinderstatistik/modelltraining/-/merge_requests](https://gitlab.thga.de/aw4null/kompressionsmodellierung/unterdrueckte-zuendung-zu-zylinderstatistik/modelltraining/-/merge_requests)  
+  → Updated the README file and opened a merge request for collaborative editing.
 ---
 
 **Remember:** Stop working after **90 minutes** and record where you stopped!
+
+###Total time used: 33 Minutes
